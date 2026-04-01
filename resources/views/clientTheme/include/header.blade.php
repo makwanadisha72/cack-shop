@@ -1,18 +1,92 @@
-<div class="py-1 bg-primary">
+<style>
+/* ================= HEADER ================= */
+.top-header {
+    background: linear-gradient(90deg, #91c8ff, #caf8cf);
+    padding: 12px 0;
+}
+
+/* BRAND */
+.brand-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* NAV WRAP */
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ================= LOGOUT BUTTON ================= */
+.logout-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 22px;
+
+    border-radius: 999px;
+    border: 2px solid #ef6262;
+
+    background: #ffffff;
+    color: #ef6262;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease;
+}
+
+/* ICON */
+.logout-btn i {
+    font-size: 18px;
+}
+
+/* HOVER */
+.logout-btn:hover {
+    background: #ef6262;
+    color: #ffffff;
+    box-shadow: 0 10px 22px rgba(239, 98, 98, 0.35);
+    transform: translateY(-2px);
+}
+
+/* ACTIVE (CLICK EFFECT) */
+.logout-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 12px rgba(239, 98, 98, 0.25);
+}
+
+/* FOCUS (ACCESSIBILITY) */
+.logout-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(239, 98, 98, 0.35);
+}
+</style>
+
+<div class="top-header">
     <div class="container">
-        <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
-            <div class="col-lg-12 d-block">
-                <div class="row d-flex">
-                    <div class="col-md pr-4 d-flex topper align-items-left">
-                        <h2 class="navbar-brand">Shree</h2>
-                    </div>
-                    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-                        <nav class="-mx-3 flex flex-1 justify-end">
-                                <a href="{{route('singhout')}}" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">Log ut</a>        
-                        </nav>
-                    </div>
-                    </div>
+        <div class="row align-items-center">
+
+            <!-- LOGO -->
+            <div class="col-md-6">
+                <h2 class="brand-name">CackShop</h2>
             </div>
+
+            <!-- LOGOUT -->
+            <div class="col-md-6">
+                <div class="header-nav">
+                    <a href="{{ route('singhout') }}" class="logout-btn">
+                        <i class="ion-ios-log-out"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

@@ -33,7 +33,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        $conn=mysqli_connect("localhost","root","","radha");
+        $conn=mysqli_connect("localhost","root","","cackshop");
         $qry1="SELECT `cat_name` FROM `subcategories` WHERE `name`= '".$request['subcat_name']."'";
         $res = mysqli_query($conn,$qry1);
         $qry2 = mysqli_fetch_row($res);
@@ -81,7 +81,7 @@ class ProductsController extends Controller
      */
     public function update(Request $request, Products $product)
     {
-        $conn=mysqli_connect("localhost","root","","radha");
+        $conn=mysqli_connect("localhost","root","","cackshop");
         $qry1="SELECT `cat_name` FROM `subcategories` WHERE `name`= '".$request['subcat_name']."'";
         $res = mysqli_query($conn,$qry1);
         $qry2 = mysqli_fetch_row($res);

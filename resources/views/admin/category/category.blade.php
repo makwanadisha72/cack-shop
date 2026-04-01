@@ -54,7 +54,7 @@
             <td>{{-- <a href=""><i class="nav-icon fas fa-trash"></i></a> --}}
               <button onclick="loadDeleteModal({{ $value->id }})" class="btn btn-sm bg-danger-light">
                 <i class="nav-icon fas fa-trash"></i>
-            </button></td>
+        </button></td>
           </tr>
           @endforeach
         </tbody>

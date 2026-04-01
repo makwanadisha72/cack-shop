@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <div class="brand-link">
-      <span class="brand-text font-weight-light ml-4">Shree Admin </span>
+      <span class="brand-text font-weight-light ml-4">CackShop Admin </span>
     </div>
 
     <!-- Sidebar -->

@@ -94,6 +94,6 @@ class CategoryController extends Controller
         // dd($category);
         unlink("image/category/".$category["image"]."");
         $category->delete();
-        return redirect()->route('admin.category.index');
+        return redirect()->route('category.index');
     }
 }

@@ -23,6 +23,7 @@ Route::get('/filter_product',function(){return view('clientTheme.filter_product'
 Route::get('/masterclient',function(){return view('clientTheme.include.master');});
 Route::get('/aboutus',function(){return view('clientTheme.aboutus');});
 Route::get('/addtocart/{id}', [Addtocart::class, 'index'])->name('addtocart'); // Your 'Add To Cart Product' view
+Route::get('/removetocart/{id}', [Addtocart::class, 'removetocart']); // Your 'Add To Cart Product' view
 Route::get('/cart',function(){return view('clientTheme.cart');});
 Route::get('/checkout',function(){return view('clientTheme.checkout');})->name('chechout');
 Route::get('/',function(){return view('clientTheme.home');})->name('home');

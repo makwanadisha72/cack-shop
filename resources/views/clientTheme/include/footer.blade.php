@@ -1,3 +1,81 @@
+<style>
+  /* ===== FOOTER UI IMPROVEMENT (NO HTML CHANGE) ===== */
+
+.ftco-footer {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 60px 0;
+    color: #e5e7eb;
+}
+
+.ftco-footer-widget {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Heading */
+.ftco-heading-2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ffffff;
+    position: relative;
+}
+
+.ftco-heading-2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #38bdf8;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Contact list */
+.block-23 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.block-23 li {
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #e5e7eb;
+}
+
+/* Align phone & email properly */
+.form-group.d-flex {
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Icons */
+.block-23 .icon {
+    font-size: 18px;
+    color: #38bdf8;
+}
+
+/* Hover effect */
+.block-23 li:hover {
+    color: #38bdf8;
+    transform: translateY(-1px);
+    transition: 0.3s ease;
+}
+
+/* ===== Loader Color Match ===== */
+#ftco-loader .path {
+    stroke: #38bdf8;
+}
+
+  </style>
+
 <footer class="ftco-footer ftco-section">
     <div class="container">
         {{-- <div class="row">
@@ -16,7 +94,7 @@
                 <div class="form-group d-flex">
                   <li><span class="icon icon-phone"></span><span>+91 98989 89998</span></li>
                   <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                  <li><span class="icon icon-envelope"></span><span> shree@gmail.com</span></li>
+                  <li><span class="icon icon-envelope"></span><span> cackshop@gmail.com</span></li>
                 </div>
                 </ul>
               </div>
